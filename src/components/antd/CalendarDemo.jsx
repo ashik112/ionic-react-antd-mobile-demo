@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { List, Calendar } from 'antd-mobile';
+import { List, Calendar, Button } from 'antd-mobile';
 import enUS from 'antd-mobile/lib/calendar/locale/en_US';
 
 const CalendarDemo = () => {
@@ -19,14 +19,15 @@ const CalendarDemo = () => {
     const renderBtn = () => {
         return (
             <>
-                <List.Item arrow="horizontal"
+                <Button
+                    type='primary'
                     onClick={() => {
                         document.getElementsByTagName('body')[0].style.overflowY = 'hidden';
                         setShowCalendar(true);
                     }}
                 >
                     Select Date Range
-        </List.Item>
+                </Button>
             </>
         );
     };
