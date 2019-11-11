@@ -1,5 +1,9 @@
 {
   "name": "Ionic Antd Mobile",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {
+      
+    }
+  },
   "type": "react"
 }
