@@ -25,6 +25,8 @@ import './theme/variables.css';
 import Sidebar from './components/layout/Sidebar';
 import Lists from './components/antd/Lists';
 import ImagePickerExample from './components/antd/ImagePickerExample';
+import CalendarDemo from './components/antd/CalendarDemo';
+import DatePickerDemo from './components/antd/DatePickerDemo';
 
 const App = () => (
   <IonApp>
@@ -32,8 +34,10 @@ const App = () => (
         <Sidebar />
         <IonRouterOutlet id="drawer">
           <Route path="/home" component={Home} exact={true} />
-          <Route path="/list" component={Lists} exact={true} />
-          <Route path="/image-picker" component={ImagePickerExample} exact={true} />
+          <Route path="/list-demo" component={Lists} exact={true} />
+          <Route path="/image-picker-demo" component={ImagePickerExample} exact={true} />
+          <Route path="/datepicker-demo" component={DatePickerDemo} exact={true} />
+          <Route path="/calendar-demo" component={CalendarDemo} exact={true} />
           <Route exact path="/" render={() => <Redirect to="/home" />} />
         </IonRouterOutlet>
     </IonReactRouter>

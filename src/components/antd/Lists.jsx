@@ -10,7 +10,7 @@ const Lists = () => {
     return (
         <IonPage>
             <Header title="List" />
-            <IonContent>
+            <IonContent className="ion-padding">
                 <List renderHeader={() => 'Basic Style'} className="my-list">
                     <Item extra={'extra content'}>Title</Item>
                 </List>

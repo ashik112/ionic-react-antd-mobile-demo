@@ -33,8 +33,8 @@ class ImagePickerExample extends React.Component {
     const { files } = this.state;
     return (
       <IonPage>
-        <IonContent>
-          <Header title="Image Picker" />
+        <Header title="Image Picker" />
+        <IonContent className="ion-padding">
           <WingBlank>
             <SegmentedControl
               values={['Single', 'Multiple']}

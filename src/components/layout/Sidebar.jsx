@@ -16,11 +16,17 @@ const Sidebar = () => (
                    <IonItem routerLink="/home" routerDirection="forward">
                             Home
                     </IonItem>
-                    <IonItem routerLink="/list" routerDirection="forward">
+                    <IonItem routerLink="/list-demo" routerDirection="forward">
                             Lists
                     </IonItem>
-                    <IonItem routerLink="/image-picker" routerDirection="forward">
+                    <IonItem routerLink="/datepicker-demo" routerDirection="forward">
+                            Date Picker
+                    </IonItem>
+                    <IonItem routerLink="/image-picker-demo" routerDirection="forward">
                             Image Picker
+                    </IonItem>
+                    <IonItem routerLink="/calendar-demo" routerDirection="forward">
+                            Calendar
                     </IonItem>
                    </IonMenuToggle>
                 </IonList>
