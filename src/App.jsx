@@ -19,17 +19,23 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-import 'antd-mobile/dist/antd-mobile.css';  
+import 'antd-mobile/dist/antd-mobile.css';
 /* Theme variables */
 import './theme/variables.css';
+import Sidebar from './components/layout/Sidebar';
+import Lists from './components/antd/Lists';
+import ImagePickerExample from './components/antd/ImagePickerExample';
 
 const App = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
-      </IonRouterOutlet>
+    <IonReactRouter id="drawer">
+        <Sidebar />
+        <IonRouterOutlet id="drawer">
+          <Route path="/home" component={Home} exact={true} />
+          <Route path="/list" component={Lists} exact={true} />
+          <Route path="/image-picker" component={ImagePickerExample} exact={true} />
+          <Route exact path="/" render={() => <Redirect to="/home" />} />
+        </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
 );

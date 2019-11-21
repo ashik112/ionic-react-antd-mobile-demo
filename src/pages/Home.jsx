@@ -1,22 +1,16 @@
 import { IonContent, IonPage } from '@ionic/react';
 import React from 'react';
-import { NavBar, Icon, Card, WhiteSpace } from 'antd-mobile';
+import { Card, WhiteSpace } from 'antd-mobile';
 import CalendarDemo from '../components/antd/CalendarDemo';
 import DatePickerDemo from '../components/antd/DatePickerDemo';
 import ImagePickerExample from '../components/antd/ImagePickerExample';
+import Header from '../components/shared/Header';
 
 
 const Home = () => {
   return (
     <IonPage>
-      <NavBar
-        leftContent="Back"
-        mode="dark"
-        rightContent={[
-          <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
-          <Icon key="1" type="ellipsis" />,
-        ]}
-      >Ionic + Antd Mobile</NavBar>
+      <Header title="Ionic+Antd Mobile" />
       <IonContent className="ion-padding">
         <Card>
           <Card.Header
